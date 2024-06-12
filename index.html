@@ -8,13 +8,38 @@
     <title>Segundo semestre</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho"><!--cabeçalho-->
     <div class="container">
-        <span class="cabecalho-menu"></span>
-        <img class="container-imagem" src="corinthians.png" alt="Logo da">
+        <input type="checkbox" id="menu" class="container-botao"><!--a tag input cria uma caixa de 
+        selecao que detecta e guarda a acao do clique-->
+        <label for="menu"><!--a tag label funciona para associar todos os
+            elementos dentro dele por meio da propriedade id-->
+        <span class="cabecalho-menu"></span><!--a tag span cria um espaço vazio no layout-->
+        </label>
+        <ul class="lista-menu"><!--a tag UL cria uma lista nao ordenada-->
+            <li class="lista-menu-titulo">Categorias</li><!--tag LI cria as linhas da lista-->
+            <li class="lista-menu-item">
+                <a href="#" class="lista-menu-link">Categoria 1</a>
+            </li>
+            <li class="lista-menu-item">
+                <a href="#" class="lista-menu-link">Categoria 2</a>
+            </li>
+            <li class="lista-menu-item">
+                <a href="#" class="lista-menu-link">Categoria 3</a>
+            </li>
+            <li class="lista-menu-item">
+                <a href="#" class="lista-menu-link">Categoria 4</a>
+            </li>
+            <li class="lista-menu-item">
+                <a href="#" class="lista-menu-link">Categoria 5</a>
+            </li>
+        </ul>
+        <img class="container-imagem" src="corinthians.png" alt="Logo da"><!--tag img para 
+        colocar imagens-->
     </div>
     <div class="container">
         <a href="#"><img class="container-imagem" src="corin.jpg" alt="Meus favoritos"></a>
+        <!--a tag A cria uma ligacao entre páginas atraves de um link-->
         <a href="#"><img class="container-imagem" src="co.png" alt="Carrinho de compras"></a>
         <a href="#"><img class="container-imagem" src="cor.jpg" alt="Meu perfil"></a>
     </div>

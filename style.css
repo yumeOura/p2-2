@@ -2,6 +2,7 @@
 
 :root{ /*definir variaveis de cor*/
     --cor-de-fundo: #EBECEE;
+    --cor-cabecalho: rgb(146, 104, 82);
     --cor-fonte: #2b0036;
 }
 body{ /*estilizacao do corpo da pagina*/
@@ -26,10 +27,11 @@ body{ /*estilizacao do corpo da pagina*/
     background-position: center;
 }
 .cabecalho{ /*estilizacao geral do cabecalho*/
-    background-color: var(--cor-fonte);
+    background-color: var(--cor-cabecalho);
     display: flex; /*distribui melhor os elementos na pagina*/
     justify-content: space-between; /*espacamento entre os elementos*/
     align-items: center; /*alinha os elementos no centro*/
+    position: relative; /*posiciona relativamente o item para usarmos outras opçoes como TOP, RIGHT, BOTTOM*/
 }
 .container{ /*estilizacao dos icones dentro das tags div*/
     display: flex; /*distribui melhor os elementos na pagina*/
@@ -39,6 +41,17 @@ body{ /*estilizacao do corpo da pagina*/
     padding: 1em; /*margem interna*/
     width: 24px;
     height: 24px;
+}
+.lista-menu{ /*estilização da classe lista-menu*/
+    display: none; /*a propriedade DISPLAY:NONE faz com que a lista seja ocultada*/
+    position: absolute;
+    top: 100%;
+}
+/*Para exibir a lista, utilizamos a pseudoclasse no CSS chamada :checked*/
+/*Essa pseudoclasse verifica se o botão está selecionado ou não*/
+/*Caso esteja selecionado, alteraremos a classe .lista-menu utilizando o combinador CSS ~ */
+.container-botao:checked ~ .lista-menu{
+    display: block; /*a propriedade DISPLAY:BLOCK faz com que a lista apareça*/
 }
 
 /*  FIM DO CABECALHO */
